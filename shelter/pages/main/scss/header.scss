@@ -1,0 +1,100 @@
+.wrapper {
+    display: flex;
+    margin: 0 auto;
+    max-width: 120rem;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.header {
+    padding-top: 4rem;
+}
+
+.menu {
+    width: 44.3rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.burger {
+    display: none;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.logo__title {
+    color: $color-primary;
+    font-family: Georgia;
+    font-size: 3.2rem;
+    letter-spacing: 0.12rem;
+    line-height: 110%;
+    
+}
+
+.logo__subtitle {
+    color: $color-light-xl;
+    font-size: 1.3rem;
+    line-height: 110%;
+    letter-spacing: 0.1rem;
+    margin-top: 0.5rem;
+}
+
+.list {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+.list__item {
+    display: flex;
+    align-content: center;
+    
+}
+
+.list__link {
+    color: $color-light-xl;
+    font-family: Arial;
+    font-size: 1.5rem;
+    line-height: 160%;
+    text-decoration: none;
+}
+
+.list__link:hover {
+    color: $color-light-s;
+}
+
+.list__item_active {
+    color: $color-light-s;
+    border-bottom: solid 3px $color-primary;
+    cursor: default;
+    pointer-events: none;
+}
+
+.list__link_disabled {
+    color: $color-dark-s;
+}
+
+@media screen and (max-width: 1100px){
+    .wrapper {
+        padding: 0 4rem;
+    }
+}
+
+@media screen and (max-width: 760px){
+    .menu {
+       display: none;
+    }
+
+    .burger {
+        display: block;
+        background: transparent;
+        border: none;
+    }
+}

@@ -1,0 +1,122 @@
+.footer {
+    background:  url('../../assets/images/noise_transparent@2x.png'), 
+                radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), 
+                #211F20;
+    padding: 4rem 4rem 0;
+    max-width: 120rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 74rem;
+}
+
+.footer__questions {
+    width: 30.2rem;
+    height: 234px;
+    padding-top: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer__visit {
+    width: 30.2rem;
+    height: 234px;
+    padding-top: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer__title {
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3.5rem;
+    line-height: 130%;
+    color: $color-light-xl;
+    letter-spacing: 0.1rem;
+    margin: 0;
+}
+.footer__contacts {
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 115%;
+    letter-spacing: 0.1rem;
+    color: $color-primary;
+    text-decoration: none;
+    position: relative;
+    margin-right: 0;
+}
+
+.footer__contacts_main {
+    padding-left: 6rem;
+    display: block;
+}
+
+.footer__contacts_nav {
+    padding-left: 5rem;
+    display: block;
+}
+
+.footer__contacts_email::before {
+    content: "";
+    position: absolute;
+    top: -0.2rem;
+    left: 0;
+    background: url('../../assets/images/mail.svg');
+    background-size: 4rem 3.2rem;
+    width: 4rem;
+    height: 3.2rem;
+}    
+
+.footer__contacts_tel::before {
+    content: "";
+    position: absolute;
+    top: -0.2rem;
+    left: 0;
+    background: url('../../assets/images/icon-phone.svg');
+    background-size: 4rem 3.2rem;
+    width: 4rem;
+    height: 3.2rem;
+}  
+.footer__contacts_address::before {
+    content: "";
+    position: absolute;
+    top: -0.2rem;
+    left: 0;
+    background: url('../../assets/images/icon-marker.svg');
+    background-size: 4rem 3.2rem;
+    width: 4rem;
+    height: 3.2rem;
+}  
+
+@media screen and (max-width: 1100px){
+    .footer {
+        justify-content: center;
+    }
+
+    .footer-container {
+        margin-bottom: 6.5rem;
+    }
+}
+
+@media screen and (max-width: 630px){
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        max-width: 74rem;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .footer img {
+        width: 26rem;
+        height: auto;
+    }
+}

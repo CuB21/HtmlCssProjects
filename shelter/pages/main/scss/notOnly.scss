@@ -1,0 +1,106 @@
+.notOnly {
+    padding: 11.25rem 4rem 0;
+    margin: -10.7rem auto 0;
+    max-width: 128rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: url('../../assets/images/noise_transparent@2x.png'), radial-gradient(100% 215.42% at 0% 0%, 
+    #5b483a 0%, #262425 100%), #211f20;
+}
+
+.notOnly-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 8.125rem;
+}
+
+.notOnly-title {
+    color: $color-light-xl;
+    font-size: 4.4rem;
+    line-height: 130%;
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: 400;
+    max-width: 31rem;
+    margin-bottom: 0;
+    padding-top: 0.182rem;
+}
+
+.notOnly-subtitle {
+    margin-top: 2.625rem;
+    line-height: 130%;
+    max-width: 460px;
+    font-size: 1.5rem;
+    font-family: Arial;
+    color: $color-dark-s
+}
+
+.notOnly-button {
+    padding: 1.5rem 4rem;
+    width: 20.7rem;
+    margin-top: 3rem;
+    background-color: $color-primary;
+    border: none;
+    border-radius: 10rem;
+    font-size: 1.7rem;
+    line-height: 130%;
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: $color-dark-3xl
+}
+
+.notOnly-button:hover {
+    background-color: $color-primary-light; 
+}
+
+@media screen and (max-width: 1100px){
+    .notOnly {
+        padding: 11.25rem 4rem 0;
+        margin: -10.7rem auto 0;
+        max-width: 128rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .notOnly-content {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 10rem;
+        padding-top: 0;
+    }
+
+    .notOnly img {
+        width: 56.9rem;
+        height: 59.3rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .notOnly-content {
+        align-items: left;
+    }
+
+    .notOnly-button {
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 630px){
+    .notOnly img {
+        width: 35rem;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .notOnly img {
+        width: 26rem;
+        height: auto;
+    }
+}

@@ -1,0 +1,557 @@
+@font-face {
+	font-weight: 500;
+	font-family: 'Roboto-Regular';
+	font-style: normal;
+	font-display: swap;
+	src: url("assets/fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-weight: 400;
+	font-family: 'Roboto-Medium';
+	font-style: normal;
+	font-display: swap;
+	src: url("assets/fonts/Roboto-Medium.ttf") format("truetype");
+}
+
+@font-face {
+	font-weight: 700;
+	font-family: 'Roboto-Bold';
+	font-style: normal;
+	font-display: swap;
+	src: url("assets/fonts/Roboto-Bold.ttf") format("truetype");
+}
+
+body {
+	max-width: 1600px;
+	margin: 0 auto;
+	padding: 0;
+	background: #FFFFFF;
+	;
+}
+
+header {
+	display: flex;
+	background-color: black;
+	padding: 11px 0;
+}
+
+h1 {
+	display: none;
+}
+
+.nav-menu {
+	width: 583px;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 0 0 502px;
+	align-items: center;
+	font-family: 'Roboto-Regular', 'Arial', sans-serif;
+	font-size: 14px;
+	line-height: 140%;
+}
+
+.nav-menu li a {
+	color: #FFFFFF;
+	text-decoration: none;
+	opacity: 0.8;
+}
+
+.nav-menu li a:hover,
+.nav-menu li a:active {
+	opacity: 1;
+	text-decoration: underline;
+}
+
+.your-life {
+	margin-top: -100px;
+	background-image: url('assets/images/bg-image.png');
+	background-size: 100%;
+	padding: 228px 0 85px;
+}
+
+.life {
+	margin: 0;
+	font-family: 'Roboto-Bold', 'Arial', sans-serif;
+	font-size: 64px;
+	letter-spacing: 4.5px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.life-text {
+	font-family: 'Roboto-Regular', 'Arial', sans-serif;
+	font-size: 18px;
+	color: #FFFFFF;
+	text-align: center;
+	width: 504px;
+	margin: 0 auto;
+	margin-bottom: 29px;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 140%;
+	text-align: center;
+}
+
+.life-start {
+	padding: 15px 47px;
+	width: 90px;
+	font-family: 'Roboto-Bold', 'Arial', sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	text-align: center;
+	background-color: #00AFDB;
+	display: block;
+	margin: 0 auto;
+	text-decoration: none;
+	margin-bottom: 183px;
+}
+
+.socials {
+	width: 170px;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding-right: 40px;
+	align-items: center;
+	list-style: none;
+}
+
+.rappresent {
+	display: flex;
+	justify-content: space-between;
+	padding: 121px 270px 140px;
+}
+
+.present-wrapper {
+	width: 407px;
+	padding-top: 175px;
+}
+
+.present {
+	margin: 0;
+	font-family: 'Roboto-Bold', 'Arial', sans-serif;
+	font-size: 24px;
+	text-transform: uppercase;
+	color: #373737;
+	width: 370px;
+	margin-bottom: 20px;
+	letter-spacing: 1px;
+	line-height: 29px;
+}
+
+.present-text {
+	margin: 0;
+	font-family: 'Roboto-Regular', 'Arial', sans-serif;
+	font-size: 14px;
+	color: #4E4E4E;
+	margin-bottom: 30px;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 143%;
+}
+
+.present-text span {
+	color: #373737;
+	font-weight: 700;
+}
+
+.present-start {
+	margin: 0;
+}
+
+.our-community {
+	display: flex;
+	justify-content: space-between;
+	padding: 82px 0 138px 270px;
+	background-color: #F5F6F7;
+}
+
+.community-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 298px;
+	padding-top: 73px;
+}
+
+.community-header {
+	font-family: 'Roboto-Medium', 'Arial', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 2.4px;
+	text-transform: uppercase;
+	color: #373737;
+	margin-top: 20px;
+}
+
+.community-text {
+	font-family: 'Roboto-Regular', 'Arial', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 19.1px;
+	color: #4E4E4E;
+	text-align: center;
+	margin: 0;
+}
+
+.community-slider {
+	width: 894px;
+	display: flex;
+	flex-direction: column;
+}
+
+.community-controler {
+	font-family: 'Roboto-Medium', 'Arial', sans-serif;
+	font-weight: 400;
+	width: 83px;
+	height: 20px;
+	padding-left: 565px;
+	padding-bottom: 18px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 100%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	color: #373737;
+}
+
+.community-button {
+	border: none;
+	background: transparent;
+	position: absolute;
+}
+
+.community-button--left {
+	top: 0;
+	left: 535px;
+}
+
+.community-button--right {
+	transform: rotate(180deg);
+	top: -3px;
+	left: 610px;
+}
+
+.community-controler p {
+	margin: 0;
+}
+
+.slider {
+	display: flex;
+	justify-content: flex-start;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.slider li {
+	margin-right: 30px;
+}
+
+.Implement {
+	display: flex;
+	justify-content: space-between;
+	padding: 118px 378px 139px 268px;
+	padding-left: 269px;
+}
+
+.Implement-wrapper {
+	width: 407px;
+	padding-top: 199px;
+	flex-direction: column;
+}
+
+.Implement-header {
+	margin: 0;
+	font-family: 'Roboto-Bold', 'Arial', sans-serif;
+	font-size: 24px;
+	text-transform: uppercase;
+	color: #373737;
+	width: 360px;
+	margin-bottom: 21px;
+	font-style: normal;
+	line-height: 28px;
+	letter-spacing: 1px;
+}
+
+.Implement-text {
+	margin: 0;
+	font-family: 'Roboto-Regular', 'Arial', sans-serif;
+	font-size: 14px;
+	color: #4E4E4E;
+	margin-bottom: 30px;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 20px;
+}
+
+.Implement-text span {
+	color: #373737;
+	font-weight: 700;
+}
+
+.implement-more {
+	margin: 0;
+	padding-right: 45px;
+}
+
+.subscribe {
+	background-image: url('assets/images/pexels-christina-morillo-1181675 1.png');
+	height: 525px;
+	display: flex;
+	justify-content: center;
+}
+
+.subscribe-wrapper {
+	padding-top: 200px;
+	height: 103px;
+	width: 406px;
+}
+
+.subscribe-form {
+	display: flex;
+	position: relative;
+}
+
+.subscribe-form::after {
+	content: "";
+	position: absolute;
+	top: 16px;
+	right: 25px;
+	width: 17px;
+	height: 14px;
+	background-image: url('assets/images/check-icon.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 17px 14px;
+}
+
+.subscribe-form:hover::after,
+.subscribe-form:active::after {
+	background-image: url('assets/images/check-iconAct.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 17px 14px;
+	cursor: pointer;
+}
+
+.subscribe-e-mail {
+	width: 316px;
+	height: 46px;
+	padding-left: 25px;
+	padding-right: 0;
+	font-family: 'Roboto-Bold', 'Arial', sans-serif;
+	border: none;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 140%;
+	color: rgba(22, 22, 22);
+	background: #FFFFFF;
+}
+
+.subscribe-submit {
+	width: 65px;
+	height: 48px;
+	background: #00AFDB;
+	border: none;
+	padding: 0;
+}
+
+.subscribe-header {
+	margin: 0;
+	font-family: 'Roboto-Regular', 'Arial', sans-serif;
+	font-size: 24px;
+	line-height: 28px;
+	text-align: center;
+	letter-spacing: 1px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	padding-bottom: 31px;
+}
+
+.download {
+	background-color: #F5F6F7;
+	height: 345px;
+	padding-top: 120px;
+}
+
+.download-wrapper {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 483px;
+	margin: 0 auto;
+}
+
+.download-header {
+	margin: 0;
+	font-family: 'Roboto-Bold', 'Arial', sans-serif;
+	letter-spacing: 1px;
+	font-size: 24px;
+	color: #373737;
+	text-transform: uppercase;
+	padding-bottom: 6px;
+}
+
+.download-text {
+	font-family: 'Roboto-Regular', 'Arial', sans-serif;
+	font-size: 14px;
+	color: #4E4E4E;
+	text-align: center;
+	line-height: 140%;
+	padding-bottom: 17px;
+}
+
+.download-buttons {
+	display: flex;
+	width: 400px;
+	justify-content: space-between;
+}
+
+.download-button {
+	display: block;
+	padding: 16px 78px 18px 18px;
+	background-color: #00AFDB;
+	font-family: 'Roboto-Bold', 'Arial', sans-serif;
+	font-size: 14px;
+	height: 14px;
+	text-transform: uppercase;
+	color: #ffffff;
+	text-align: center;
+	text-decoration: none;
+	position: relative;
+}
+
+.download-market {
+	padding: 16px 74px 18px 18px;
+}
+
+.download-button:hover {
+	color: #111111;
+}
+
+.download-store::before {
+	content: "";
+	position: absolute;
+	width: 60px;
+	height: 48px;
+	background: #009CC2 url('assets/images/icon-apple.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	right: 0;
+	bottom: 0;
+}
+
+.download-store:hover::before {
+	background: #009CC2 url('assets/images/icon-appleAct.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.download-market::before {
+	content: "";
+	position: absolute;
+	width: 60px;
+	height: 48px;
+	background: #009CC2 url('assets/images/icon-android.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	right: 0;
+	bottom: 0;
+}
+
+.download-market:hover::before {
+	background: #009CC2 url('assets/images/icon-android Act.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.footer {
+	background-color: black;
+	display: flex;
+	justify-content: space-between;
+	padding: 60px 160px 70px 120px;
+	align-items: center;
+	position: relative;
+}
+
+.footer-list {
+	display: flex;
+	justify-content: space-between;
+	width: 240px;
+	font-family: 'Roboto-Regular', 'Arial', sans-serif;
+	font-size: 14px;
+	list-style: none;
+}
+
+.footer-list li a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.footer-text {
+	margin: 0;
+	font-family: 'Roboto-Regular', 'Arial', sans-serif;
+	font-size: 14px;
+	color: #818181;
+}
+
+.about-center {
+	position: relative;
+}
+
+.about-center::before {
+	content: '';
+	position: absolute;
+	width: 8px;
+	height: 0px;
+	left: -40px;
+	top: 6px;
+	border: 1px solid #4E4E4E;
+	transform: rotate(-90deg);
+}
+
+.about-center::after {
+	content: '';
+	position: absolute;
+	width: 8px;
+	height: 0px;
+	right: -40px;
+	top: 6px;
+	border: 1px solid #4E4E4E;
+	transform: rotate(-90deg);
+}
+
+.footer-image {
+	position: absolute;
+	left: 780px;
+}
+
+.active-link:hover {
+    color: black;
+}
+
+.socials li a img:hover {
+	background: #009CC2;
+	border-radius: 50%;
+}
+
+.community-button img:hover {
+	background: #009CC2;
+	cursor: pointer;
+	border-radius: 15px;
+}
+
+.footer-list li a:hover {
+	text-decoration: underline;
+}
